@@ -1,0 +1,62 @@
+music_library = [
+  ["Adele",
+    ["19",
+      ["Day Dreamer", "Best for Last"]
+    ],
+    ["21",
+      ["Rolling in the Deep", "Rumor Has It"]
+    ]
+  ],
+  ["Beyonce",
+    ["4",
+      ["1 + 1", "Countdown"]
+    ],
+    ["Beyonce",
+      ["Haunted", "Pretty Hurts"]
+    ]
+  ]
+]
+
+def primary
+primary_colors = ["Red", "Yellow", "Blue"]
+primary_colors.each do |color| 
+  puts "Primary Color #{color} is #{color.length} letters long."
+end 
+
+def bros
+brothers = ["Tim", "Tom", "Jim"]
+counter = 1
+brothers.each do |brother|
+puts "This is loop number #{counter}."
+puts "Stop hitting yourself #{brother}."
+counter +=1
+end
+end
+
+
+
+/*
+function find(array, criteriaFn) {
+  for (let i = 0; i < array.length; i++) {
+    if (criteriaFn(array[i])) {
+      return array[i]
+    }
+  }
+}
+
+function find(array, criteriaFn) {
+  let current = array
+  let next = []
+    while (current) {
+      if (criteriaFn(current)) {
+        return current
+        }
+      if (Array.isArray(current)) {
+        for (let i = 0; i < current.length; i++) {
+          next.push(current[i])
+        }
+      }
+    current = next.shift()
+    }
+  return null
+}
